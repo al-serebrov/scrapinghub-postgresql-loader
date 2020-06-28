@@ -1,0 +1,1 @@
+# scrapinghub-postgresql-loader
