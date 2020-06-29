@@ -69,6 +69,7 @@ class PGPipeline(object):
 
     def process_items(self):
         data_df = pd.DataFrame(self._get_items())
+        data_df = data_df.astype(str)
         data_df.to_sql(
             self.table_name,
             con=self.eng,
